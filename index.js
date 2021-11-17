@@ -1,5 +1,3 @@
-// index.js
-
 // ahora tambien importamos mongoose
 const express  = require('express');
 const mongoose = require('mongoose');
@@ -13,6 +11,7 @@ const port = process.env.PORT        || 3000;
 const db   = process.env.MONGODB_URI || 'mongodb://localhost/hellodb';
 
 const app = express();
+
 app.use(cors());
 
 // conexion a la base de datos
